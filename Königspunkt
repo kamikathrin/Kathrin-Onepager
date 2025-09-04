@@ -1,0 +1,83 @@
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kathrin · Projektmanagement mit Struktur, Humor & digitalem Drive</title>
+<meta name="description" content="Kathrin – Projektmanagement für Marken & Web. Struktur, Humor, Digitalfokus. KI‑unterstützt. Barrierefrei gedacht. Onepager in <24h erstellt." />
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+--bg:#0e0e0e; /* Dark theme background */
+--fg:#f5f5f5; /* Dark theme text */
+--muted:#bbbbbb;
+--accent:#ff6b00; /* Warm, modern Accent */
+--card:#1a1a1a;
+--focus:#9dd6ff; /* Focus ring */
+--kp:#2D2D2A; /* Ahmets "Farbcode des Vertrauens" */
+--ok:#22c55e; /* green */
+}
+[data-theme="light"]{
+--bg:#ffffff;
+--fg:#161616;
+--muted:#4a4a4a;
+--card:#f3f3f3;
+--accent:#d9480f;
+--focus:#0ea5e9;
+}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;background:var(--bg);color:var(--fg);}
+a{color:inherit}
+.wrap{max-width:1000px;margin-inline:auto;padding:24px}
+header{position:sticky;top:0;background:linear-gradient( to bottom, rgba(0,0,0,.7), rgba(0,0,0,.0));backdrop-filter:saturate(140%) blur(8px);}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+.brand .logo{width:28px;height:28px;}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--fg);border-radius:999px;padding:.6rem 1rem;text-decoration:none}
+.btn:hover{background:var(--fg);color:var(--bg)}
+.accent{border-color:var(--accent)}
+.accent:hover{background:var(--accent);color:#fff}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center;padding:48px 24px}
+.hero h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:.2em 0 .3em}
+.hero p{color:var(--muted);font-size:1.05rem}
+.badge{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--muted);color:var(--muted);border-radius:999px;padding:.35rem .7rem;font-size:.9rem}
+.grid{display:grid;gap:18px}
+.grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
+.chip{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:.35rem .65rem;font-size:.9rem;margin:.25rem .25rem 0 0}
+.section{padding:20px 24px}
+.section h2{font-size:clamp(20px,3vw,28px)}
+.muted{color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:18px}
+.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(255,255,255,.08);padding:.2rem .45rem;border-radius:6px;border:1px solid rgba(255,255,255,.15)}
+/* Collage look */
+.collage{position:relative;isolation:isolate}
+.piece{position:absolute;inset:auto;border-radius:12px;padding:8px 10px;font-weight:600}
+.p1{background:#fff;color:#000;left:-10px;top:-10px;transform:rotate(-3deg)}
+.p2{background:#000;color:#fff;right:-16px;bottom:-10px;transform:rotate(4deg)}
+.p3{background:var(--accent);color:#fff;left:30%;top:-20px;transform:rotate(2deg)}
+/* Skip link & focus */
+.skip{position:absolute;left:-9999px;top:auto}
+.skip:focus{left:16px;top:16px;background:var(--focus);color:#000;padding:.5rem;border-radius:8px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+/* Reduced motion */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body data-theme="dark">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header>
+<div class="wrap">
+<nav aria-label="Hauptnavigation">
+<div class="brand" aria-label="Marke">
+<!-- Minimal Crown + Pin as inline SVG logo -->
+<svg class="logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path fill="currentColor" d="M12 2l3 4 4-2-1 6-6 4-6-4-1-6 4 2 3-4zM12 14a5 5 0 0 0-5 5c0 2 1 3 5 3s5-1 5-3a5 5 0 0 0-5-5z"/>
+</svg>
+<span>Kathrin</span>
+</div>
+<div style="display:flex;gap:10px;align-items:center">
+</html>
